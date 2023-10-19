@@ -2,7 +2,7 @@ import { createApp } from "vue";
 import { createPinia } from "pinia";
 import { router } from "./router/router.js";
 import App from "./App.vue";
-import "@/assets/style/main.scss";
+import "./assets/style/main.scss";
 
 import { createI18n, useI18n } from "vue-i18n";
 import { languages } from "./locales/i18n";
