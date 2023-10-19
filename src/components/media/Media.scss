@@ -1,0 +1,23 @@
+.media {
+  cursor: pointer;
+
+  & span {
+    width: 1px;
+    height: 200px;
+    background: #abb2bf;
+  }
+
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 16px;
+}
+
+@media screen and (max-width: 1130px) {
+  .media {
+    display: none;
+  }
+}

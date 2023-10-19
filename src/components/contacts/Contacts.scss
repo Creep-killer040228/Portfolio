@@ -1,0 +1,70 @@
+:root {
+  --title: #fff;
+  --grey: #abb2bf;
+}
+
+[data-theme="true"] {
+  --title: #000;
+  --grey: #676869;
+}
+.contacts {
+  &__title {
+    color: var(--title);
+    font-size: 32px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    img {
+      width: 20px;
+      height: 42px;
+    }
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 45px;
+    &_text {
+      color: var(--grey);
+      font-size: 16px;
+      font-weight: 500;
+      max-width: 505px;
+      width: 100%;
+      line-height: 20px;
+    }
+    &_card {
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 16px;
+      gap: 16px;
+      border: 1px solid var(--grey);
+      &-title {
+        color: var(--title);
+        font-size: 16px;
+        font-weight: 600;
+      }
+      &-cont {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        flex-wrap: wrap;
+        a {
+          display: flex;
+          align-items: center;
+          gap: 5px;
+          color: var(--grey);
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 592px) {
+  .contacts__wrapper {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}

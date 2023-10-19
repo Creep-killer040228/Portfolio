@@ -1,0 +1,50 @@
+{
+    "Logo": "Samvel",
+    "nav": {
+        "home": "home",
+        "works": "works",
+        "about-me": "about-me",
+        "contacts": "contacts"
+    },
+    "langvich": "EN",
+    "banner": {
+        "bannerTitle": "Hi I'm Samvel",
+        "bannerTitleSpan": "front-end developer",
+        "bannerSub": "I create beautiful dynamic and functional web pages and applications",
+        "bannerBtn": "Contacts me!!!",
+        "bannerImg": "Currently working on",
+        "bannerImgSpan": "Portfolio"
+    },
+    "quote": {
+        "quoteBig": "With great power comes great electricity bill",
+        "quoteMin": "- Dr. Who"
+    },
+    "projects": {
+        "projectstTitle": "projects",
+        "projectstBtn": "View all ~~>"
+    },
+    "skills": {
+        "skillsTitle": "skills",
+        "Languages": "Languages",
+        "Databases": "Databases",
+        "Tools": "Tools",
+        "Other": "Other",
+        "Frameworks": "Frameworks"
+    },
+    "about-me": {
+        "aboutTitle": "about-me",
+        "aboutH3": "Hi, my name is Samvel!",
+        "aboutP1": "I am a frontend developer living in Tashkent, Uzbekistan. Over the last few years, I have developed my skills in building responsive websites from scratch and turned them into modern and user-friendly web applications.",
+        "aboutP2": "My calling is to turn my creativity and knowledge into web development that will help my clients create their online presence. I am always eager to learn the latest technologies and frameworks to keep up with the latest trends in web development."
+    },
+    "contacts": {
+        "contactsTitle": "contacts",
+        "contactsText": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
+        "contactsMessage": "Message me here"
+    },
+    "footer": {
+        "footerText": "Web designer and front-end developer",
+        "footerMedia": "Media",
+        "footerCopyright": "© Copyright 2022. Produced by Samvel"
+    }
+}
