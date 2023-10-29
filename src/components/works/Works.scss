@@ -7,14 +7,19 @@
   --title: #000;
   --grey: #676869;
 }
+
 .work {
   position: relative;
 }
+
 .works {
   display: flex;
   flex-direction: column;
   gap: 48px;
+
+  padding-top: 80px;
   margin-bottom: 100px;
+
   &__title {
     display: flex;
     align-items: center;
@@ -72,12 +77,15 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  img {
+
+  >img {
     border: 1px solid var(--grey);
     max-width: 330px;
     width: 100%;
+    display: flex;
+    justify-items: end;
     height: 201px;
-    object-fit: cover;
+    object-fit: unset;
   }
 
   &-stak {
@@ -108,7 +116,7 @@
     }
   }
 
-  &_link {
+  &-link {
     display: flex;
     gap: 16px;
   }
@@ -136,12 +144,18 @@
     grid-template-columns: repeat(1, 1fr);
   }
 
+  .card>img {
+    width: 273.4px;
+
+  }
+
   .lines {
     width: 300px;
   }
 
-  .card_link {
+  .card-link {
     gap: 6px;
+    flex-direction: column;
   }
 }
 

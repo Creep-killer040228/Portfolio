@@ -1,5 +1,5 @@
 <template>
-  <div class="work" :data-theme="Store.isDarkMode">
+  <div class="work" :data-theme="Store.isDarkMode" id="works">
     <div class="works container">
       <div class="works__title">
         <span class="works__title-name">
@@ -10,7 +10,7 @@
         <router-link to="" class="works__title-all"> {{ $t('projects.projectstBtn') }} </router-link>
       </div>
       <div class="works__wrapper">
-        <WorksCard v-for="repos in Store.repository.length" :key="repos" />
+        <WorksCard v-for="repos in Store.card" :key="repos" :repos="repos" />
       </div>
     </div>
     <img class="data" src="@/assets/img/works_.data.png" alt="" />

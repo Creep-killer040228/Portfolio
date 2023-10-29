@@ -1,14 +1,14 @@
 <template>
   <div>
     <div class="card" :data-theme="Store.isDarkMode">
-      <img src="@/assets/img/snekers.png" alt="" />
-      <div class="card-stak">{{ card[0].stak }}</div>
+      <img :src="`../../../public/card${repos.img}.png`" alt="" />
+      <div class="card-stak">{{ repos.stak }}</div>
       <div class="card-desc">
-        <div class="card-desc-title">{{ card[0].name }}</div>
-        <div class="card-desc-sub">{{ card[0].desc }}</div>
-        <div class="card_link">
-          <BtnLive />
-          <btnGithub />
+        <div class="card-desc-title">{{ repos.name }}</div>
+        <div class="card-desc-sub">{{ repos.desc }}</div>
+        <div class="card-link">
+          <BtnLive :repos="repos" />
+          <BtnGithub />
         </div>
       </div>
     </div>
@@ -16,10 +16,12 @@
 </template>
 
 <script setup>
+import { defineProps } from 'vue';
 import BtnLive from "../addition/btnLive.vue";
-import btnGithub from "../addition/btnGithub.vue";
+import BtnGithub from "../addition/btnGithub.vue";
 import { useData } from "@/stores/data.js";
 const Store = useData();
-const card = Store.card
+const props = defineProps({
+  repos: { type: Object },
+});
 </script>
-

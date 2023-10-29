@@ -1,5 +1,5 @@
 <template>
-  <div class="about" :data-theme="Store.isDarkMode">
+  <div class="about" :data-theme="Store.isDarkMode" id="about">
     <div class="about__title container">
       <img src="@/assets/img/nav_icon.svg" alt="" /> {{ $t('about-me.aboutTitle') }}
       <div class="lines"></div>

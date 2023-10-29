@@ -24,7 +24,7 @@
     </div>
     <Transition name="burgBtn">
       <div class="burger__wrapper" v-if="Store.burgBtn">
-        <HeaderMenuBurger />
+        <HeaderMenuBurger @click="Store.burgBtn = !Store.burgBtn" />
         <div class="translate" @click="toggleTranslate">
           <span class="translate__text-ru" v-if="Store.translate">RU</span>
           <span class="translate__text-en" v-else>EN</span>

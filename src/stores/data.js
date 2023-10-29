@@ -8,11 +8,9 @@ export const useData = defineStore({
     isDarkMode: false,
     repository: [],
     card: [
-      {
-        name: "Sneakers",
-        stak: "HTML SCSS VUE JS",
-        desc: "Магазин лучших кроссовок",
-      },
+      { name: "VuePizza", desc: "Cамая вкусная пицца во вселенной", stak: "HTML SCSS VUE JS", img: '1', url: 'vue-pizzaa.vercel.app' },
+      { name: "Sneakers", desc: "Магазин лучших кроссовок", stak: "HTML SCSS VUE JS", img: '3', url: 'sneakers-7ohu2kd4d-samvels-projects.vercel.app' },
+      { name: "TodoList", desc: "Список заметок", stak: "HTML SCSS VUE JS", img: '4', url: 'creep-killer040228.github.io/TodoList/' },
     ],
   }),
   actions: {
