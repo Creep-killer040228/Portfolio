@@ -23,6 +23,7 @@ export const useData = defineStore({
           `https://api.github.com/users/Creep-killer040228/repos`
         );
         this.repository = res.data;
+        console.log(this.repository);
       } catch (error) {
         console.error("Произошла ошибка", error);
       }
