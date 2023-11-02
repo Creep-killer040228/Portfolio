@@ -4,16 +4,17 @@
       <div class="works__title">
         <router-link to="/projects" class="works__title-name">
           <img src="@/assets/img/nav_icon.svg" alt="" />
-          <div v-if="this.$route.path === '/projects'">
+          <div v-if="$route.path === '/projects'">
             {{ $t('projects.projectstTitlePage') }}
           </div>
           <div v-else>
             {{ $t('projects.projectstTitle') }}
           </div>
-          <div v-if="this.$route.path !== '/projects'" class="lines"></div>
+          <div v-if="$route.path !== '/projects'" class="lines"></div>
         </router-link>
-        <router-link to="/projects" class="works__title-all" v-if="this.$route.path !== '/projects'"> {{
-          $t('projects.projectstBtn') }} </router-link>
+        <router-link to="/projects" class="works__title-all" v-if="$route.path !== '/projects'">
+          {{ $t('projects.projectstBtn') }}
+        </router-link>
       </div>
       <div class="works__wrapper">
         <WorksCard v-for="repos in Store.projectsAll" :key="repos" :repos="repos" />

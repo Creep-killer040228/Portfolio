@@ -22,7 +22,7 @@
         </div>
       </transition>
     </div>
-    <Transition name="burgBtn">
+    <transition name="burgBtn">
       <div class="burger__wrapper" v-if="Store.burgBtn">
         <HeaderMenuBurger @click="Store.burgBtn = !Store.burgBtn" />
         <div class="translate" @click="toggleTranslate">
@@ -36,7 +36,7 @@
           <a target="_blank" href="https://github.com/Creep-killer040228"><img src="@/assets/img/Github.svg" alt="" /></a>
         </div>
       </div>
-    </Transition>
+    </transition>
   </header>
 </template>
 

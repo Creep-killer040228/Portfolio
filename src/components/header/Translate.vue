@@ -4,12 +4,11 @@
         <span class="translate__text-en" v-else>EN</span>
     </div>
 </template>
-
+  
 <script setup>
 import { useData } from "@/stores/data.js";
-const Store = useData();
+const { translate } = useData();
 const toggleTranslate = () => {
-    Store.translate = !Store.translate;
+    translate.value = !translate.value;
 };
-
 </script>

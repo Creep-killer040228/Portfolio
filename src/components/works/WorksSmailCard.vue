@@ -10,11 +10,11 @@
         </div>
     </div>
 </template>
-
+  
 <script setup>
 import BtnGithub from "../addition/btnGithub.vue";
 import { useData } from "@/stores/data.js";
 const Store = useData();
 </script>
-
+  
 <style lang="scss" scoped></style>

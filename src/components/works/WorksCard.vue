@@ -22,6 +22,6 @@ import BtnGithub from "../addition/btnGithub.vue";
 import { useData } from "@/stores/data.js";
 const Store = useData();
 const props = defineProps({
-  repos: { type: Object },
+  repos: Object,
 });
 </script>

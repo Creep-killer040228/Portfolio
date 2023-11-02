@@ -39,7 +39,6 @@
         width: 16px;
         height: 16px;
       }
-
     }
 
     &_nav {
@@ -47,18 +46,15 @@
       align-items: center;
       gap: 32px;
 
-      @include media(1024) {
+      @media (max-width: 1024px) {
         display: none;
       }
-
     }
 
     .nav__menu {
       display: flex;
       align-items: center;
       gap: 32px;
-
-
 
       & li>a {
         color: var(--text);
@@ -83,7 +79,7 @@
   align-items: flex-end;
   position: relative;
 
-  @include media(1024) {
+  @media (max-width: 1024px) {
     display: flex;
   }
 
@@ -189,7 +185,7 @@
   transition: 0.3s linear;
   cursor: pointer;
 
-  @include media(1024) {
+  @media (max-width: 1024px) {
     font-size: 32px;
     padding: 16px 16px 0 16px;
   }
