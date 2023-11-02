@@ -20,7 +20,6 @@
       </div>
       <img src="@/assets/img/about.png" alt="" />
     </div>
-    <img class="right" src="@/assets/img/about-right.png" alt="" />
   </div>
 </template>
 
