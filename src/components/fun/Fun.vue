@@ -12,7 +12,7 @@
                 <span> {{ $t('fun.funFacts.anime') }}</span>
                 <span> {{ $t('fun.funFacts.game') }}</span>
             </div>
-            <img class="fun__wpapper_img" src="../../assets/img/my__facts.png" alt="">
+            <img class="fun__wpapper_img" src="@/assets/img/my__facts.png" alt="">
         </div>
     </div>
 </template>
@@ -21,5 +21,3 @@
 import { useData } from "@/stores/data.js";
 const Store = useData();
 </script>
-
-<style lang="scss" scoped></style>
