@@ -72,7 +72,7 @@
     right: -10px;
     top: 50%;
 
-    @include media(1024px) {
+    @include media(1024) {
       display: none;
     }
   }

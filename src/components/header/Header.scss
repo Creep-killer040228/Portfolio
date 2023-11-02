@@ -46,7 +46,7 @@
       align-items: center;
       gap: 32px;
 
-      @media (max-width: 1024px) {
+      @include media(1024) {
         display: none;
       }
     }
@@ -79,7 +79,7 @@
   align-items: flex-end;
   position: relative;
 
-  @media (max-width: 1024px) {
+  @include media(1024) {
     display: flex;
   }
 
@@ -185,7 +185,7 @@
   transition: 0.3s linear;
   cursor: pointer;
 
-  @media (max-width: 1024px) {
+  @include media(1024) {
     font-size: 32px;
     padding: 16px 16px 0 16px;
   }

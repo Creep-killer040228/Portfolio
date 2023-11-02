@@ -24,7 +24,7 @@
     </div>
     <transition name="burgBtn">
       <div class="burger__wrapper" v-if="Store.burgBtn">
-        <HeaderMenuBurger />
+        <HeaderMenuBurger @click="toggleBurger" />
         <div class="translate" @click="toggleTranslate">
           <span class="translate__text-ru" v-if="Store.transleite">RU</span>
           <span class="translate__text-en" v-else>EN</span>
@@ -41,10 +41,10 @@
 </template>
 
 <script setup>
-import Media from "../media/Media.vue";
-import btnAnimation from "../addition/btnAnimation.vue";
-import HeaderMenu from './HeaderMenu.vue'
-import HeaderMenuBurger from './HeaderMenuBurger.vue'
+import Media from "@/components/media/Media.vue";
+import btnAnimation from "@/components/addition/btnAnimation.vue";
+import HeaderMenu from '@/components/header/HeaderMenu.vue'
+import HeaderMenuBurger from '@/components/header/HeaderMenuBurger.vue'
 import { computed, watch } from "vue";
 import { useData } from "@/stores/data.js";
 import { useI18n } from "vue-i18n";

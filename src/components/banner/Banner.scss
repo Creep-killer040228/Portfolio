@@ -14,7 +14,7 @@
   align-items: center;
   margin-top: 90px;
 
-  @include media(1024px) {
+  @include media(1024) {
     flex-direction: column;
   }
 
@@ -72,7 +72,7 @@
       top: 84px;
       z-index: -1;
 
-      @include media(430px) {
+      @include media(430) {
         width: 110px;
         height: 110px;
       }
@@ -83,7 +83,7 @@
       right: 16px;
       bottom: 96px;
 
-      @include media(430px) {
+      @include media(430) {
         width: 60px;
         height: 60px;
       }

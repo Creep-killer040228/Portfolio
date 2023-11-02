@@ -17,8 +17,8 @@
 
 <script setup>
 import { defineProps } from 'vue';
-import BtnLive from "../addition/btnLive.vue";
-import BtnGithub from "../addition/btnGithub.vue";
+import BtnLive from "@/components/addition/btnLive.vue";
+import BtnGithub from "@/components/addition/btnGithub.vue";
 import { useData } from "@/stores/data.js";
 const Store = useData();
 const props = defineProps({

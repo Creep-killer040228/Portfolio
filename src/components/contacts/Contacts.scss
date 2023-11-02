@@ -12,6 +12,7 @@
   padding-top: 100px;
   padding-bottom: 100px;
 
+
   &__title {
     color: var(--title);
     font-size: 32px;
@@ -31,9 +32,9 @@
     align-items: center;
     margin-top: 45px;
 
-    @media (max-width: 878px) {
+    @include media(878) {
       flex-direction: column;
-      gap: 20px;
+      gap: 50px;
       text-align: center;
     }
 
@@ -91,7 +92,7 @@
     align-items: center;
     gap: 30px;
 
-    @media (max-width: 878px) {
+    @include media(878) {
       flex-direction: column;
       gap: 20px;
       text-align: center;
@@ -101,7 +102,7 @@
       display: flex;
       gap: 8px;
 
-      @media (max-width: 640px) {
+      @include media(640) {
         flex-direction: column-reverse;
         gap: 10px;
         justify-items: center;

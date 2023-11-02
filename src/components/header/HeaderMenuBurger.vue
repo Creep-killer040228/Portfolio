@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div >
         <ul class="burger__wrapper_nav">
             <li>
                 <a href="#">
