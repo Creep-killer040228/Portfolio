@@ -22,10 +22,10 @@
   font-weight: 500;
   border: 1px solid var(--btn);
   transition: 0.4s linear;
+}
 
-  &:hover {
-    background: var(--btnhover);
-  }
+.live:hover {
+  background: var(--btnhover);
 }
 
 .github {
@@ -40,10 +40,10 @@
   font-weight: 500;
   border: 1px solid var(--btn);
   transition: 0.4s linear;
+}
 
-  &:hover {
-    background: var(--btnhover);
-  }
+.github:hover {
+  background: var(--btnhover);
 }
 
 .demo {
@@ -58,67 +58,67 @@
   justify-content: center;
   gap: 15px;
   transition: 0.4s linear;
+}
 
-  &:hover {
-    background: rgba(171, 178, 191, 0.2);
-  }
+.demo:hover {
+  background: rgba(171, 178, 191, 0.2);
 }
 
 .quate {
   position: relative;
+}
 
-  .bg {
-    position: absolute;
-    right: -10px;
-    top: 50%;
+.quate .bg {
+  position: absolute;
+  right: -10px;
+  top: 50%;
 
-    @include media(1024) {
-      display: none;
-    }
+  @media (max-width: 1024px) {
+    display: none;
   }
+}
 
-  &__wrapper {
-    margin: 120px auto;
-    max-width: 600px;
-    width: 100%;
-    border: 1px solid #abb2bf;
-    padding: 32px;
-    position: relative;
+.quate__wrapper {
+  margin: 120px auto;
+  max-width: 600px;
+  width: 100%;
+  border: 1px solid #abb2bf;
+  padding: 32px;
+  position: relative;
+}
 
-    &_title {
-      color: var(--title);
-      font-size: 24px;
-      font-weight: 500;
-      text-align: center;
+.quate__wrapper_title {
+  color: var(--title);
+  font-size: 24px;
+  font-weight: 500;
+  text-align: center;
+}
 
-      .top {
-        position: absolute;
-        top: -15px;
-        left: 20px;
-        z-index: 1;
-      }
+.quate__wrapper_title .top {
+  position: absolute;
+  top: -15px;
+  left: 20px;
+  z-index: 1;
+}
 
-      .but {
-        position: absolute;
-        bottom: -10px;
-        right: 17px;
-        z-index: 1;
-      }
-    }
+.quate__wrapper_title .but {
+  position: absolute;
+  bottom: -10px;
+  right: 17px;
+  z-index: 1;
+}
 
-    span {
-      position: absolute;
-      bottom: -65px;
-      right: -1px;
-      padding: 16px;
-      border-bottom: 1px solid #abb2bf;
-      border-left: 1px solid #abb2bf;
-      border-right: 1px solid #abb2bf;
-      color: var(--title);
-      font-size: 24px;
-      font-weight: 400;
-    }
-  }
+.quate__wrapper span {
+  position: absolute;
+  bottom: -65px;
+  right: -1px;
+  padding: 16px;
+  border-bottom: 1px solid #abb2bf;
+  border-left: 1px solid #abb2bf;
+  border-right: 1px solid #abb2bf;
+  color: var(--title);
+  font-size: 24px;
+  font-weight: 400;
 }
 
 .read-btn {
@@ -129,8 +129,8 @@
   border: 1px solid #c778dd;
   width: max-content;
   transition: 0.4s linear;
+}
 
-  &:hover {
-    background: var(--btnhover);
-  }
+.read-btn:hover {
+  background: var(--btnhover);
 }

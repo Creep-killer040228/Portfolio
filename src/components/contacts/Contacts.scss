@@ -31,7 +31,7 @@
     align-items: center;
     margin-top: 45px;
 
-    @include media(878) {
+    @media (max-width: 878px) {
       flex-direction: column;
       gap: 20px;
       text-align: center;
@@ -45,8 +45,6 @@
       width: 100%;
       line-height: 20px;
     }
-
-
 
     &_card {
       padding: 16px;
@@ -93,7 +91,7 @@
     align-items: center;
     gap: 30px;
 
-    @include media(878) {
+    @media (max-width: 878px) {
       flex-direction: column;
       gap: 20px;
       text-align: center;
@@ -103,7 +101,7 @@
       display: flex;
       gap: 8px;
 
-      @include media(640) {
+      @media (max-width: 640px) {
         flex-direction: column-reverse;
         gap: 10px;
         justify-items: center;
@@ -129,7 +127,6 @@
       color: var(--title);
       font-size: 16px;
       font-weight: 400;
-
     }
   }
 }

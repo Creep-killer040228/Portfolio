@@ -26,12 +26,12 @@
         }
     }
 
-    &__wpapper {
+    &__wrapper {
         display: flex;
         justify-content: space-between;
 
         &_img {
-            @include media(1200) {
+            @media (max-width: 1200px) {
                 display: none;
             }
         }
@@ -41,9 +41,11 @@
             flex-wrap: wrap;
             gap: 16px;
             width: 60%;
-            @include media(1200){
+
+            @media (max-width: 1200px) {
                 width: 100%;
             }
+
             span {
                 padding: 8px;
                 border: 1px solid var(--grey);

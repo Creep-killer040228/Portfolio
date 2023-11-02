@@ -24,7 +24,7 @@
     justify-content: space-between;
     align-items: center;
 
-    @include media(500) {
+    @media (max-width: 500px) {
       flex-direction: column;
       gap: 20px;
     }
@@ -34,14 +34,10 @@
       flex-direction: column;
       gap: 16px;
 
-
-
       &-top {
         display: flex;
         align-items: center;
         gap: 24px;
-
-
 
         a {
           display: flex;

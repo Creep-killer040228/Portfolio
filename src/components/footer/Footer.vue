@@ -7,7 +7,8 @@
           <a href="#">
             <img src="@/assets/img/Logo.svg" alt="" v-if="!Store.isDarkMode" />
             <img src="@/assets/img/logo__dark.svg" alt="" v-else />
-            {{ $t('Logo') }}</a>
+            {{ $t('Logo') }}
+          </a>
         </div>
         <span>{{ $t('footer.footerText') }}</span>
       </div>
@@ -20,7 +21,9 @@
         </span>
       </div>
     </div>
-    <div class="copyright"> {{ $t('footer.footerCopyright') }}</div>
+    <div class="copyright">
+      {{ $t('footer.footerCopyright') }}
+    </div>
   </footer>
 </template>
 
