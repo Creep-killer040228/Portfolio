@@ -1,9 +1,11 @@
-import { createRouter, createWebHistory } from "vue-router";
+import {
+  createRouter,
+  createWebHistory
+} from "vue-router";
 import HomeView from '../views/HomeView/HomeView.vue'
 export const router = createRouter({
   history: createWebHistory(),
-  routes: [
-    {
+  routes: [{
       path: "/",
       name: "Home",
       component: HomeView,
@@ -11,17 +13,17 @@ export const router = createRouter({
     {
       path: "/projects",
       name: "ProjectsView",
-      component: () => import("../views/ProjectsView/ProjectsView.vue"),
+      component: () => import("@/views/ProjectsView/ProjectsView.vue"),
     },
     {
       path: "/about",
       name: "AboutView",
-      component: () => import("../views/AboutView/AboutView.vue"),
+      component: () => import("@/views/AboutView/AboutView.vue"),
     },
     {
       path: "/contacts",
       name: "ContactsView",
-      component: () => import("../views/ContactsView/ContactsView.vue"),
+      component: () => import("@/views/ContactsView/ContactsView.vue"),
     },
   ],
 });

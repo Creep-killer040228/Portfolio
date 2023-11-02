@@ -73,7 +73,7 @@
   left: 0;
   top: 70px;
 
-  @include media(900) {
+  @include media(1024) {
     display: none;
   }
 }
@@ -83,7 +83,7 @@
   right: 0;
   bottom: 87px;
 
-  @include media(900) {
+  @include media(1024) {
     display: none;
   }
 }
