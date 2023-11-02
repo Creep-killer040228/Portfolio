@@ -1,13 +1,13 @@
 <template>
   <div>
-    <AboutView />
+    <About />
     <Skills />
     <Fun />
   </div>
 </template>
 
 <script setup>
-import AboutView from '@/components/about/About.vue'
+import About from '@/components/about/About.vue'
 import Fun from '@/components/fun/Fun.vue';
 import Skills from '@/components/skills/Skills.vue';
 </script>
