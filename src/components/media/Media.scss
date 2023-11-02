@@ -1,6 +1,12 @@
 .media {
   cursor: pointer;
 
+  @include media(1250) {
+    display: none;
+  }
+
+ 
+
   & span {
     width: 1px;
     height: 200px;
@@ -14,10 +20,4 @@
   position: fixed;
   top: 0px;
   left: 16px;
-}
-
-@media screen and (max-width: 1130px) {
-  .media {
-    display: none;
-  }
 }

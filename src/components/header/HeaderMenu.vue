@@ -2,7 +2,7 @@
     <div>
         <ul class="nav__menu">
             <li>
-                <a href="#homes">
+                <a href="#">
                     <img src="@/assets/img/nav_icon.svg" alt="" />
                     {{ $t('nav.home') }}</a>
             </li>

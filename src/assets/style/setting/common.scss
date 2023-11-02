@@ -11,7 +11,7 @@
 }
 
 .container {
-  max-width: 1050px;
+  max-width: 1115px;
   width: 100%;
   padding: 0 15px;
   margin: 0 auto;
@@ -20,9 +20,16 @@
 body {
   background: #282c33;
   overflow-x: hidden;
+  font-family: 'FiraCode', sans-serif;
 }
 
 html,
 body {
   scroll-behavior: smooth;
+}
+
+@mixin media($size) {
+  @media screen and (max-width: #{$size}px) {
+    @content;
+  }
 }

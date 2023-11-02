@@ -20,11 +20,14 @@
         "quoteMin": "- Dr. Who"
     },
     "projects": {
-        "projectstTitle": "projects",
-        "projectstBtn": "View all ~~>"
+        "projectstTitle": "Projects",
+        "projectstBtn": "View all ~~>",
+        "projectstTitlePage": "Complete-apps",
+        "projectstALL": "List of my projects"
+
     },
     "skills": {
-        "skillsTitle": "skills",
+        "skillsTitle": "Skills",
         "Languages": "Languages",
         "Databases": "Databases",
         "Tools": "Tools",
@@ -32,18 +35,32 @@
         "Frameworks": "Frameworks"
     },
     "about-me": {
-        "aboutTitle": "about-me",
+        "aboutTitle": "About-me",
+        "aboutPage": "Who am i?",
+
         "aboutH3": "Hi, my name is Samvel!",
         "aboutP1": "I am a frontend developer living in Tashkent, Uzbekistan. Over the last few years, I have developed my skills in building responsive websites from scratch and turned them into modern and user-friendly web applications.",
         "aboutP2": "My calling is to turn my creativity and knowledge into web development that will help my clients create their online presence. I am always eager to learn the latest technologies and frameworks to keep up with the latest trends in web development."
+
     },
     "contacts": {
-        "contactsTitle": "contacts",
+        "contactsTitle": "Contacts",
         "contactsText": "I’m interested in freelance opportunities. However, if you have other request or question, don’t hesitate to contact me",
-        "contactsMessage": "Message me here"
+        "contactsMessage": "Message me here",
+        "supportMeHere": "Support me here"
+    },
+    "fun": {
+        "funTitle": "My-Fun-Facts",
+        "funFacts": {
+            "football": "He was a former professional footballer",
+            "game": "I relax playing games like Dota 2, Counter-Strike",
+            "Dyrachyo": "Favourite Dota 2 player Dyrachyo",
+            "anime": "I love anime",
+            "song": "Favourite singer Max Korzh"
+        }
     },
     "footer": {
-        "footerText": "Web designer and front-end developer",
+        "footerText": "Back end and front-end developer",
         "footerMedia": "Media",
         "footerCopyright": "© Copyright 2022. Produced by Samvel"
     }

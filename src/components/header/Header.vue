@@ -2,11 +2,11 @@
   <Media />
   <header class="header container" :data-theme="theme">
     <div class="header__wrapper">
-      <a href="#" class="header__wrapper_logo">
+      <RouterLink to="/" class="header__wrapper_logo">
         <img src="@/assets/img/Logo.svg" alt="" v-if="!Store.isDarkMode" />
         <img src="@/assets/img/logo__dark.svg" alt="" v-else />
         {{ $t("Logo") }}
-      </a>
+      </RouterLink>
       <nav class="header__wrapper_nav">
         <HeaderMenu />
         <div class="translate" @click="toggleTranslate">

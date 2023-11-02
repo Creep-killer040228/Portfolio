@@ -17,13 +17,19 @@
   flex-direction: column;
   gap: 48px;
 
-  padding-top: 80px;
   margin-bottom: 100px;
+  padding-top: 100px;
 
   &__title {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @include media(400) {
+      flex-direction: column;
+      align-items: start;
+      gap: 20px;
+    }
 
     img {
       width: 20px;
@@ -50,6 +56,15 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 16px;
+
+    @include media(1125) {
+      grid-template-columns: repeat(2, 1fr);
+      justify-items: center;
+    }
+
+    @include media(760) {
+      grid-template-columns: repeat(1, 1fr);
+    }
   }
 }
 
@@ -57,12 +72,20 @@
   position: absolute;
   left: 0;
   top: 70px;
+
+  @include media(900) {
+    display: none;
+  }
 }
 
 .blok {
   position: absolute;
   right: 0;
   bottom: 87px;
+
+  @include media(900) {
+    display: none;
+  }
 }
 
 .lines {
@@ -70,17 +93,21 @@
   height: 2px;
   background: #c778dd;
   margin-left: 16px;
+
+  @include media(900) {
+    display: none;
+  }
 }
 
 .card {
-  max-width: 330px;
+  max-width: 350px;
   width: 100%;
   display: flex;
   flex-direction: column;
 
   >img {
     border: 1px solid var(--grey);
-    max-width: 330px;
+    max-width: 350px;
     width: 100%;
     display: flex;
     justify-items: end;
@@ -119,60 +146,48 @@
   &-link {
     display: flex;
     gap: 16px;
+
+    @include media(400) {
+      flex-direction: column;
+    }
   }
 }
 
-@media screen and (max-width: 1200px) {
-  .data {
-    display: none;
-  }
+.smail-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
 
-  .blok {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 992px) {
-  .works__wrapper {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-}
-
-@media screen and (max-width: 768px) {
-  .works__wrapper {
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .card>img {
-    width: 273.4px;
-
-  }
-
-  .lines {
-    width: 300px;
-  }
-
-  .card-link {
-    gap: 6px;
+  &__item {
+    display: flex;
     flex-direction: column;
-  }
-}
+    border: 1px solid var(--grey);
 
-@media screen and (max-width: 560px) {
-  .lines {
-    width: 150px;
-  }
-}
+    &_title {
+      color: var(--grey);
+      font-size: 16px;
+      font-weight: 400;
+      padding: 8px;
+      border-bottom: 1px solid var(--grey);
+    }
 
-@media screen and (max-width: 420px) {
-  .lines {
-    display: none;
-  }
-}
+    &_desc {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 16px;
 
-@media screen and (max-width: 320px) {
-  .card_link {
-    flex-direction: column;
+      &-title {
+        color: var(--title, );
+        font-size: 24px;
+        font-weight: 500;
+      }
+
+      &-sub {
+        color: var(--grey);
+        font-size: 16px;
+        font-weight: 400;
+      }
+    }
   }
 }

@@ -7,25 +7,36 @@
   --title: #000;
   --grey: #676869;
 }
+
 .contacts {
   padding-top: 100px;
   padding-bottom: 100px;
+
   &__title {
     color: var(--title);
     font-size: 32px;
     font-weight: 500;
     display: flex;
     align-items: center;
+
     img {
       width: 20px;
       height: 42px;
     }
   }
+
   &__wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 45px;
+
+    @include media(878) {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+
     &_text {
       color: var(--grey);
       font-size: 16px;
@@ -34,23 +45,32 @@
       width: 100%;
       line-height: 20px;
     }
+
+
+
     &_card {
       padding: 16px;
       display: flex;
       flex-direction: column;
+      align-items: center;
       margin-bottom: 16px;
       gap: 16px;
       border: 1px solid var(--grey);
+      max-width: 300px;
+      width: 100%;
+
       &-title {
         color: var(--title);
         font-size: 16px;
         font-weight: 600;
       }
+
       &-cont {
         display: flex;
         flex-direction: column;
         gap: 16px;
         flex-wrap: wrap;
+
         a {
           display: flex;
           align-items: center;
@@ -63,10 +83,79 @@
     }
   }
 }
-@media screen and (max-width: 592px) {
-  .contacts__wrapper {
+
+.contact-page {
+  margin-top: 114px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    @include media(878) {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+    }
+
+    &-card {
+      display: flex;
+      gap: 8px;
+
+      @include media(640) {
+        flex-direction: column-reverse;
+        gap: 10px;
+        justify-items: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &__title {
+    margin-bottom: 46px;
+    display: flex;
+    color: var(--title);
+    font-size: 32px;
+    font-weight: 600;
     flex-direction: column;
-    gap: 20px;
-    text-align: center;
+    gap: 14px;
+
+    &-list {
+      display: flex;
+    }
+
+    span {
+      color: var(--title);
+      font-size: 16px;
+      font-weight: 400;
+
+    }
+  }
+}
+
+.help {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid var(--grey);
+  height: 100%;
+  padding: 16px;
+  color: var(--grey);
+  font-size: 16px;
+  font-weight: 400;
+  width: 260px;
+
+  &_div {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  span {
+    color: var(--title);
+    font-size: 16px;
+    font-weight: 500;
   }
 }

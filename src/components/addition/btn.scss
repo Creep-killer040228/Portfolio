@@ -3,11 +3,13 @@
   --btn: #c778dd;
   --btnhover: rgba(199, 120, 221, 0.2);
 }
+
 [data-theme="true"] {
   --title: #000;
   --btn: #800ca1;
   --btnhover: #c778dd;
 }
+
 .live {
   padding: 8px 16px;
   display: flex;
@@ -59,7 +61,6 @@
 
   &:hover {
     background: rgba(171, 178, 191, 0.2);
-    // background: #abb2bf;
   }
 }
 
@@ -70,6 +71,10 @@
     position: absolute;
     right: -10px;
     top: 50%;
+
+    @include media(1024) {
+      display: none;
+    }
   }
 
   &__wrapper {
@@ -103,16 +108,19 @@
 
     span {
       position: absolute;
-      bottom: -62px;
+      bottom: -65px;
       right: -1px;
       padding: 16px;
-      border: 1px solid #abb2bf;
+      border-bottom: 1px solid #abb2bf;
+      border-left: 1px solid #abb2bf;
+      border-right: 1px solid #abb2bf;
       color: var(--title);
       font-size: 24px;
       font-weight: 400;
     }
   }
 }
+
 .read-btn {
   padding: 8px 16px;
   color: var(--title);
@@ -121,18 +129,8 @@
   border: 1px solid #c778dd;
   width: max-content;
   transition: 0.4s linear;
+
   &:hover {
     background: var(--btnhover);
-  }
-}
-@media screen and (max-width: 786px) {
-  .bg {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 380px) {
-  .quate__wrapper_title {
-    font-size: 18px;
   }
 }

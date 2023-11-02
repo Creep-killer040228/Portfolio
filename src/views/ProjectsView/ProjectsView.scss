@@ -1,0 +1,25 @@
+:root {
+    --title: #fff;
+    --grey: #abb2bf;
+}
+
+[data-theme="true"] {
+    --title: #000;
+    --grey: #676869;
+}
+
+.project {
+    &__title {
+        padding-top: 114px;
+        color: var(--title);
+        font-size: 32px;
+        font-weight: 600;
+
+    }
+
+    & span {
+        color: var(--title);
+        font-size: 16px;
+        font-weight: 400;
+    }
+}

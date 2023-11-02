@@ -1,5 +1,9 @@
 <template>
-  <div></div>
+  <div>
+    <ContactsPage />
+  </div>
 </template>
 
-<script setup></script>
+<script setup>
+import ContactsPage from '@/components/contacts/ContactsPage.vue';
+</script>

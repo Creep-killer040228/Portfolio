@@ -1,0 +1,59 @@
+:root {
+    --title: #fff;
+    --grey: #abb2bf;
+}
+
+[data-theme="true"] {
+    --title: #000;
+    --grey: #676869;
+}
+
+.fun {
+    display: flex;
+    flex-direction: column;
+    gap: 26px;
+
+    &__title {
+        color: var(--title);
+        font-size: 32px;
+        font-weight: 500;
+        display: flex;
+        align-items: center;
+
+        img {
+            width: 20px;
+            height: 42px;
+        }
+    }
+
+    &__wpapper {
+        display: flex;
+        justify-content: space-between;
+
+        &_img {
+            @include media(1200) {
+                display: none;
+            }
+        }
+
+        &_desc {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 16px;
+            width: 60%;
+            @include media(1200){
+                width: 100%;
+            }
+            span {
+                padding: 8px;
+                border: 1px solid var(--grey);
+                color: var(--grey);
+                font-size: 16px;
+                font-weight: 400;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}

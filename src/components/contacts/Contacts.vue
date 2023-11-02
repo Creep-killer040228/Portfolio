@@ -1,9 +1,9 @@
 <template>
   <div class="contacts container" :data-theme="Store.isDarkMode" id="contact">
-    <div class="contacts__title">
+    <router-link to="/contacts" class="contacts__title">
       <img src="@/assets/img/nav_icon.svg" alt="" /> {{ $t('contacts.contactsTitle') }}
       <div class="lines"></div>
-    </div>
+    </router-link>
     <div class="contacts__wrapper">
       <div class="contacts__wrapper_text">
         {{ $t('contacts.contactsText') }}
@@ -15,6 +15,6 @@
 
 <script setup>
 import { useData } from "@/stores/data.js";
-import ContactsCard from "./ContactsCard.vue";
+import ContactsCard from "@/components/contacts/ContactsCard.vue";
 const Store = useData();
 </script>

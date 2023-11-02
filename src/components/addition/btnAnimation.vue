@@ -1,12 +1,7 @@
 <template>
   <div class="toggle-switch">
     <label class="switch-label">
-      <input
-        type="checkbox"
-        class="checkbox"
-        @change="DarcMode"
-        v-model="Store.isDarkMode"
-      />
+      <input type="checkbox" class="checkbox" @change="DarcMode" v-model="Store.isDarkMode" />
       <span class="slider"></span>
     </label>
   </div>
@@ -62,7 +57,7 @@ const DarcMode = (event) => {
   transition: 0.3s;
 }
 
-.checkbox:checked ~ .slider {
+.checkbox:checked~.slider {
   background-color: var(--light);
 }
 
@@ -81,7 +76,7 @@ const DarcMode = (event) => {
   transition: 0.3s;
 }
 
-.checkbox:checked ~ .slider::before {
+.checkbox:checked~.slider::before {
   -webkit-transform: translateX(18px);
   -ms-transform: translateX(18px);
   transform: translateX(18px);
@@ -89,7 +84,8 @@ const DarcMode = (event) => {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
-@media screen and (max-width: 600px) {
+
+@media screen and (max-width: 1024px) {
   .toggle-switch {
     position: relative;
     width: 75px;
@@ -126,7 +122,7 @@ const DarcMode = (event) => {
     transition: 0.3s;
   }
 
-  .checkbox:checked ~ .slider {
+  .checkbox:checked~.slider {
     background-color: var(--light);
   }
 
@@ -145,7 +141,7 @@ const DarcMode = (event) => {
     transition: 0.3s;
   }
 
-  .checkbox:checked ~ .slider::before {
+  .checkbox:checked~.slider::before {
     -webkit-transform: translateX(35px);
     -ms-transform: translateX(35px);
     transform: translateX(35px);
