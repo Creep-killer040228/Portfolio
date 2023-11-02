@@ -1,7 +1,7 @@
 <template>
   <div :class="['about', { active: $route.path === '/about' }]" :data-theme="Store.isDarkMode" id="about">
     <router-link to="/about" class="about__title container">
-      <div class="about__title">
+      <div class="about__title_desc">
         <img src="@/assets/img/nav_icon.svg" alt="" v-if="$route.path !== '/about'" />
         <img src="@/assets/img/title__img.svg" alt="" v-else />
         {{ $t('about-me.aboutTitle') }}
