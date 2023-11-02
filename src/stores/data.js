@@ -13,7 +13,7 @@ export const useData = defineStore({
         descSub: 'Tudolist - это удобное приложение для организации задач, которое повышает продуктивность и эффективность. '
       }
     ],
-    skilss: [
+    skills: [
       { title: '65%', skill: 'JavaScript TypeScript Node.js', lang: 'Languages' },
       { title: '55%', skill: 'PostgreSQL', lang: 'Databases' },
       { title: '90%', skill: 'VSCode Git GitHub Figma', lang: 'Tools' },
