@@ -76,7 +76,7 @@
       right: -93%;
       bottom: 100px;
 
-      @media (max-width: 550px) {
+      @include media(550px) {
         display: none;
       }
     }
