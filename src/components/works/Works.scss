@@ -104,7 +104,23 @@
   display: flex;
   flex-direction: column;
 
+  @include media(400) {
+    width: 300px;
+  }
+
+  @include media(345) {
+    width: 260px;
+  }
+
   >img {
+    @include media(400) {
+      width: 300px;
+    }
+
+    @include media(345) {
+      width: 260px;
+    }
+
     border: 1px solid var(--grey);
     max-width: 350px;
     width: 100%;
@@ -113,6 +129,8 @@
     height: 201px;
     object-fit: unset;
   }
+
+
 
   &-stak {
     border: 1px solid var(--grey);
