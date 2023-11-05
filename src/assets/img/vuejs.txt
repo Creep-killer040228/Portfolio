@@ -1,0 +1,59 @@
+Существует API endpoint , фильтрации стран
+CURL пример запроса:
+
+curl -X 'POST'   'https://devops100.site/test/'   -H 'accept: */*'   -H 'Content-Type: application/json'   -d '{
+  "filters": {
+     "iso_3166_1_a2":"RU"
+  },
+  "paginate": {
+    "page": 1,
+    "pp_items": 10
+  }
+}'
+Фильтрация возможна по полю iso_3166_1_a2
+Также возможен переход по странцам используя переменые page,pp_items.
+Ответ:
+{
+  "form_errors": null,
+  "success_message": "Success",
+  "page_data": {
+    "data": [
+      {
+        "iso_3166_1_a2": "RU",
+        "iso_3166_1_a3": "RUS",
+        "iso_3166_1_numeric": "643",
+        "printable_name": "Russian Federation",
+        "name": "",
+        "display_order": 0,
+        "is_shipping_country": false
+      }
+    ],
+    "rpag": {
+      "has_next": false,
+      "has_previous": false,
+      "has_other_pages": false,
+      "next_page_number": null,
+      "previous_page_number": null,
+      "start_index": 1,
+      "end_index": 1,
+      "total_count": 249,
+      "selected_count": 1,
+      "pages": 1
+    }
+  },
+  "redirect": "",
+  "exc_stack": "",
+  "debug": [],
+  "user_groups": "",
+  "user_perms": ""
+}
+Задача:
+Откомментировать что по вашему мнению могут значить поля в ответе сервера ( Можно предположить что это может быть )
+Реализовать интерфейс ( табличку для возможности просмотра стран с фильтрацией ) Использовать поля из ответа для удобного пролистывания списка стран ( Подумать как использовать в отображении массив rpag.
+Интерфейс должен предпологать адаптивность.
+
+Условия реализации.
+Использовать для выполнения VUE.js 2 
+Не использовать никакие сборщики, задача должна быть выполнена подключением к странице vue.js
+В результате должен получиться переиспользуемый компонент таблицы например <сtable></ctable>
+

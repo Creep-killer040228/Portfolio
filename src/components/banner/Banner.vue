@@ -11,7 +11,7 @@
     </div>
     <div class="banner__img">
       <img class="banner__img-bg" src="@/assets/img/banner__bg.svg" alt="" />
-      <img class="banner__img-user" src="@/assets/img/banner.png" alt="" />
+      <img class="banner__img-user" src="../../assets/img/about2.png" alt="" />
       <img class="banner__img-icon" src="@/assets/img/banner__icon.svg" alt="" />
       <h3> {{ $t("banner.bannerImg") }} <span> {{ $t("banner.bannerImgSpan") }}</span></h3>
     </div>

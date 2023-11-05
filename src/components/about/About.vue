@@ -18,7 +18,7 @@
         <p>{{ $t('about-me.aboutP1') }}</p>
         <p>{{ $t('about-me.aboutP2') }}</p>
       </div>
-      <img src="@/assets/img/about.png" alt="" />
+      <img src="@/assets/img/about3.png" alt="" />
     </div>
   </div>
 </template>
