@@ -2,28 +2,28 @@
     <div >
         <ul class="burger__wrapper_nav">
             <li>
-                <a href="#">
+                <router-link to="/">
                     <img src="@/assets/img/nav_icon.svg" alt="" />
                     {{ $t('nav.home') }}
-                </a>
+                </router-link>
             </li>
             <li>
-                <a href="#works">
+                <router-link to="/projects">
                     <img src="@/assets/img/nav_icon.svg" alt="" />
                     {{ $t('nav.works') }}
-                </a>
+                </router-link>
             </li>
             <li>
-                <a href="#about">
+                <router-link to="/about">
                     <img src="@/assets/img/nav_icon.svg" alt="" />
                     {{ $t('nav.about-me') }}
-                </a>
+                </router-link>
             </li>
             <li>
-                <a href="#contact">
+                <router-link to="/contacts">
                     <img src="@/assets/img/nav_icon.svg" alt="" />
                     {{ $t('nav.contacts') }}
-                </a>
+                </router-link>
             </li>
         </ul>
     </div>

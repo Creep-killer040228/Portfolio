@@ -5,16 +5,17 @@
             <div class="smail-list__item_desc">
                 <div class="smail-list__item_desc-title">{{ smail.descTitle }}</div>
                 <div class="smail-list__item_desc-sub">{{ smail.descSub }}</div>
-                <BtnGithub />
+                <BtnGithubs  />
             </div>
         </div>
     </div>
 </template>
   
 <script setup>
-import BtnGithub from "@/components/addition/btnGithub.vue";
 import { useData } from "@/stores/data.js";
+import BtnGithubs from "../addition/btnGithubs.vue";
 const Store = useData();
+
 </script>
   
 <style lang="scss" scoped></style>

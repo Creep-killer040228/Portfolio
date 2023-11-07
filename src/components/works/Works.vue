@@ -29,4 +29,8 @@
 import { useData } from "@/stores/data.js";
 const Store = useData();
 import WorksCard from "@/components/works/WorksCard.vue";
+import { defineProps } from 'vue';
+const props = defineProps({
+  reposts: Object,
+});
 </script>

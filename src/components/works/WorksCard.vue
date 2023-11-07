@@ -8,7 +8,7 @@
         <div class="card-desc-sub">{{ repos.desc }}</div>
         <div class="card-link">
           <BtnLive :repos="repos" />
-          <BtnGithub />
+          <BtnGithub :repos="repos" />
         </div>
       </div>
     </div>

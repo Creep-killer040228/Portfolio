@@ -10,7 +10,7 @@ export const useData = defineStore({
     smailItem: [
       {
         stak: 'HTML SCSS VUE.JS', descTitle: 'Приложение для управления списками задач',
-        descSub: 'Tudolist - это удобное приложение для организации задач, которое повышает продуктивность и эффективность. '
+        descSub: 'Todolist - это удобное приложение для организации задач, которое повышает продуктивность и эффективность. '
       }
     ],
     skills: [
@@ -21,11 +21,11 @@ export const useData = defineStore({
       { title: '75%', skill: ' Vue.js React.js Express.js', lang: 'Frameworks' },
     ],
     projectsAll: [
-      { name: "VuePizza", desc: "Cамая вкусная пицца во вселенной", stak: "HTML SCSS VUE.JS", img: '1', url: 'vue-pizzaa.vercel.app' },
-      { name: "Sneakers", desc: "Магазин лучших кроссовок", stak: "HTML SCSS VUE.JS", img: '3', url: 'sneakers-7ohu2kd4d-samvels-projects.vercel.app' },
+      { name: "VuePizza", desc: "Cамая вкусная пицца во вселенной", stak: "HTML SCSS VUE.JS", img: '1', url: 'vue-pizzaa.vercel.app', urlGit: 'VuePizzaa' },
+      { name: "Sneakers", desc: "Магазин лучших кроссовок", stak: "HTML SCSS VUE.JS", img: '3', url: 'sneakers-7ohu2kd4d-samvels-projects.vercel.app', urlGit: 'Sneakers' },
     ],
     projectsSmall: [
-      { name: "TodoList", desc: "Список заметок", stak: "HTML SCSS VUE JS", img: '4', url: 'creep-killer040228.github.io/TodoList/' },
+      { name: "TodoList", desc: "Список заметок", stak: "HTML SCSS VUE JS", img: '4', url: 'TodoList' },
     ]
   }),
   actions: {

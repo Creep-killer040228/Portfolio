@@ -1,0 +1,19 @@
+:root {
+    --title: #fff;
+    --grey: #abb2bf;
+}
+
+[data-theme="true"] {
+    --title: #000;
+    --grey: #676869;
+}
+
+.not-found {
+    margin-top: 150px;
+    text-align: center;
+    color: var(--title);
+
+    & span {
+        font-size: 30px;
+    }
+}
