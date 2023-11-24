@@ -1,5 +1,5 @@
 <template>
-  <footer class="footer" :data-theme="Store.isDarkMode">
+  <footer class="footer">
     <div class="liness"></div>
     <div class="footer__wrapper container">
       <div class="footer__wrapper_desc">

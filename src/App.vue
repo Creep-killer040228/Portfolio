@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div :data-theme="headerStore.isDarkMode">
     <Header />
     <RouterView></RouterView>
     <Footer />
@@ -25,7 +25,7 @@ const getDark = () => {
 const getLocal = () => {
   let local = localStorage.getItem("locale");
   if (local) {
-    locale.value = JSON.parse(local); 
+    locale.value = JSON.parse(local);
   }
 };
 

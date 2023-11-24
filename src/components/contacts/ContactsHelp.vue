@@ -1,5 +1,5 @@
 <template>
-    <div class="help" :data-theme="Store.isDarkMode">
+    <div class="help" >
         <span>
             {{ $t('contacts.supportMeHere') }}
         </span>

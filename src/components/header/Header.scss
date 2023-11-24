@@ -1,17 +1,3 @@
-:root {
-  --bg: #282c33;
-  --text: #abb2bf;
-  --texthover: #fff;
-  --btnBurger: #d9d9d9;
-}
-
-[data-theme="true"] {
-  --bg: #fff;
-  --text: #282c33;
-  --texthover: #c778dd;
-  --btnBurger: #282c33;
-}
-
 .header {
   position: fixed;
   top: 0;

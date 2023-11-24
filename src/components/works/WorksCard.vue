@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card" :data-theme="Store.isDarkMode">
+    <div class="card" >
       <img :src="`img/card${repos.img}.png`" alt="" />
       <div class="card-stak">{{ repos.stak }}</div>
       <div class="card-desc">

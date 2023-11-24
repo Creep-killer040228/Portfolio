@@ -1,13 +1,3 @@
-:root {
-  --title: #fff;
-  --grey: #abb2bf;
-}
-
-[data-theme="true"] {
-  --title: #000;
-  --grey: #676869;
-}
-
 .skills {
   &__wrapper {
     &_title {

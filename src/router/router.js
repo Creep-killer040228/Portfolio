@@ -1,8 +1,8 @@
-import { createRouter, createWebHashHistory  } from "vue-router";
+import { createRouter, createWebHashHistory } from "vue-router";
 import HomeView from '../views/HomeView/HomeView.vue'
 
 export const router = createRouter({
-  history: createWebHashHistory (),
+  history: createWebHashHistory(),
   routes: [
     {
       path: "/",
@@ -30,4 +30,7 @@ export const router = createRouter({
       component: () => import("@/views/NotFound/NotFound.vue"),
     },
   ],
+  scrollBehavior(to, from, savedPosition) {
+    return { top: 0 }
+  },
 });

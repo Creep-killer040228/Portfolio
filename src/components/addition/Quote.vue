@@ -1,5 +1,5 @@
 <template>
-  <div class="quate" :data-theme="Store.isDarkMode">
+  <div class="quate" >
     <div class="container">
       <div class="quate__wrapper">
         <div class="quate__wrapper_title">

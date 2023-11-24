@@ -1,5 +1,5 @@
 <template>
-  <div class="work" :data-theme="Store.isDarkMode" id="works">
+  <div class="work"  id="works">
     <div class="works container">
       <div class="works__title">
         <router-link to="/projects" class="works__title-name">

@@ -1,15 +1,3 @@
-:root {
-  --title: #fff;
-  --btn: #c778dd;
-  --btnhover: rgba(199, 120, 221, 0.2);
-}
-
-[data-theme="true"] {
-  --title: #000;
-  --btn: #800ca1;
-  --btnhover: #c778dd;
-}
-
 .live {
   padding: 8px 16px;
   display: flex;

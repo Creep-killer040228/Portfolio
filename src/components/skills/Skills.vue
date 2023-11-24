@@ -1,5 +1,5 @@
 <template>
-  <div class="skills container" :data-theme="Store.isDarkMode">
+  <div class="skills container">
     <div class="skills__wrapper">
       <router-link to="/about" class="skills__wrapper_title">
         <img src="@/assets/img/nav_icon.svg" alt="" />

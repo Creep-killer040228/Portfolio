@@ -1,5 +1,5 @@
 <template>
-  <div class="contacts__wrapper_card" :data-theme="Store.isDarkMode">
+  <div class="contacts__wrapper_card">
     <div class="contacts__wrapper_card-title">{{ $t('contacts.contactsMessage') }}</div>
     <div class="contacts__wrapper_card-cont">
       <a target="_blank" href="https://t.me/SamvelDavid"><img src="@/assets/img/Telegram.svg" alt="" />

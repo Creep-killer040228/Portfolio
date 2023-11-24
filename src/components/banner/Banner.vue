@@ -1,5 +1,5 @@
 <template >
-  <section class="banner container" :data-theme="Store.isDarkMode">
+  <section class="banner container" >
     <div class="banner__desc">
       <h2 class="banner__desc_title">
         {{ $t("banner.bannerTitle") }} <span>{{ $t("banner.bannerTitleSpan") }}</span>

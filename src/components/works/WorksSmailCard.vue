@@ -1,5 +1,5 @@
 <template>
-    <div class="smail-list container" :data-theme="Store.isDarkMode">
+    <div class="smail-list container">
         <div class="smail-list__item" v-for="smail in Store.smailItem" :key="smail.id">
             <div class="smail-list__item_title">{{ smail.stak }}</div>
             <div class="smail-list__item_desc">

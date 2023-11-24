@@ -28,6 +28,28 @@ body {
   scroll-behavior: smooth;
 }
 
+:root {
+  --bg: #282c33;
+  --text: #abb2bf;
+  --title: #fff;
+  --grey: #abb2bf;
+  --texthover: #fff;
+  --btnBurger: #d9d9d9;
+  --btnhover: rgba(199, 120, 221, 0.2);
+  --btn: #c778dd;
+}
+
+[data-theme="true"] {
+  --bg: #fff;
+  --text: #282c33;
+  --texthover: #c778dd;
+  --btnBurger: #282c33;
+  --title: #000;
+  --grey: #676869;
+  --btn: #800ca1;
+  --btnhover: #c778dd;
+}
+
 @mixin media($size) {
   @media screen and (max-width: #{$size}px) {
     @content;

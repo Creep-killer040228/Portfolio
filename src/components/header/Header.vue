@@ -1,6 +1,6 @@
 <template>
   <Media />
-  <header class="header container" :data-theme="theme">
+  <header class="header container" >
     <div class="header__wrapper">
       <RouterLink to="/" class="header__wrapper_logo">
         <img src="@/assets/img/Logo.svg" alt="" v-if="!Store.isDarkMode" />
